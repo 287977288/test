@@ -1,0 +1,271 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Mar  1 15:00:39 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-36) on 01 March 2019 05:47:54
+os: Linux-3.10.0-957.5.1.el7.x86_64 #1 SMP Fri Feb 1 14:54:57 UTC 2019
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/lyf/test/Django/Django-1.11.20/django/bin/newsite/newsite
+writing pidfile to uwsgi.pid
+detected binary path: /usr/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/lyf/test/Django/Django-1.11.20/django/bin/newsite
+your processes number limit is 3796
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (:8000).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Mar  1 16:47:49 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-36) on 01 March 2019 05:47:54
+os: Linux-3.10.0-957.5.1.el7.x86_64 #1 SMP Fri Feb 1 14:54:57 UTC 2019
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/lyf/test/Django/Django-1.11.20/django/bin/newsite/newsite
+writing pidfile to uwsgi.pid
+detected binary path: /usr/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/lyf/test/Django/Django-1.11.20/django/bin/newsite
+your processes number limit is 3796
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (:8000).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Mar  1 17:10:32 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-36) on 01 March 2019 05:47:54
+os: Linux-3.10.0-957.5.1.el7.x86_64 #1 SMP Fri Feb 1 14:54:57 UTC 2019
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/lyf/test/Django/Django-1.11.20/django/bin/newsite/newsite
+writing pidfile to uwsgi.pid
+detected binary path: /usr/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/lyf/test/Django/Django-1.11.20/django/bin/newsite
+your processes number limit is 3796
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :9000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.5 (default, Oct 30 2018, 23:45:53)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-36)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1a4b2e0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 364600 bytes (356 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 4 seconds on interpreter 0x1a4b2e0 pid: 25193 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 25193)
+spawned uWSGI worker 1 (pid: 25206, cores: 1)
+spawned uWSGI worker 2 (pid: 25207, cores: 1)
+spawned uWSGI worker 3 (pid: 25208, cores: 1)
+spawned uWSGI worker 4 (pid: 25209, cores: 1)
+urls
+Internal Server Error: /updatedb
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/Django-1.11.20-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/Django-1.11.20-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/Django-1.11.20-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./newsite/testdb.py", line 36, in updatedb
+    test1 = eaxm_db.objects.get(id = 1)
+  File "/usr/lib/python2.7/site-packages/Django-1.11.20-py2.7.egg/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/Django-1.11.20-py2.7.egg/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+DoesNotExist: eaxm_db matching query does not exist.
+[pid: 25209|app: 0|req: 1/1] 192.168.15.1 () {42 vars in 821 bytes} [Fri Mar  1 09:11:19 2019] GET /updatedb => generated 68528 bytes in 925 msecs (HTTP/1.1 500) 4 headers in 129 bytes (1 switches on core 0)
+Not Found: /hello
+[pid: 25209|app: 0|req: 2/2] 192.168.15.1 () {42 vars in 815 bytes} [Fri Mar  1 09:12:18 2019] GET /hello => generated 2821 bytes in 27 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /hello
+[pid: 25209|app: 0|req: 3/3] 192.168.15.1 () {42 vars in 815 bytes} [Fri Mar  1 09:15:28 2019] GET /hello => generated 2821 bytes in 38 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /hello
+[pid: 25209|app: 0|req: 4/4] 192.168.15.1 () {44 vars in 846 bytes} [Fri Mar  1 09:15:50 2019] GET /hello => generated 2821 bytes in 38 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+Not Found: /hello
+[pid: 25209|app: 0|req: 5/5] 192.168.15.1 () {42 vars in 815 bytes} [Fri Mar  1 09:16:52 2019] GET /hello => generated 2821 bytes in 28 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 25206)...
+Gracefully killing worker 2 (pid: 25207)...
+Gracefully killing worker 3 (pid: 25208)...
+Gracefully killing worker 4 (pid: 25209)...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+binary reloading uWSGI...
+chdir() to /home/lyf/test/Django/Django-1.11.20/django/bin/newsite/newsite
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (:9000)
+running /usr/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Mar  1 09:18:32 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-36) on 01 March 2019 05:47:54
+os: Linux-3.10.0-957.5.1.el7.x86_64 #1 SMP Fri Feb 1 14:54:57 UTC 2019
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/lyf/test/Django/Django-1.11.20/django/bin/newsite/newsite
+detected binary path: /usr/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/lyf/test/Django/Django-1.11.20/django/bin/newsite
+your processes number limit is 3796
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address :9000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.5 (default, Oct 30 2018, 23:45:53)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-36)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1b8b130
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 364600 bytes (356 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 3 seconds on interpreter 0x1b8b130 pid: 25193 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 25193)
+spawned uWSGI worker 1 (pid: 25378, cores: 1)
+spawned uWSGI worker 2 (pid: 25379, cores: 1)
+spawned uWSGI worker 3 (pid: 25380, cores: 1)
+spawned uWSGI worker 4 (pid: 25381, cores: 1)
+urls
+view.hello
+[pid: 25381|app: 0|req: 1/1] 192.168.15.1 () {44 vars in 846 bytes} [Fri Mar  1 09:18:50 2019] GET /hello => generated 194 bytes in 280 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+Internal Server Error: /updatedb
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/Django-1.11.20-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/Django-1.11.20-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/Django-1.11.20-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./newsite/testdb.py", line 36, in updatedb
+    test1 = eaxm_db.objects.get(id = 1)
+  File "/usr/lib/python2.7/site-packages/Django-1.11.20-py2.7.egg/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/Django-1.11.20-py2.7.egg/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+DoesNotExist: eaxm_db matching query does not exist.
+[pid: 25381|app: 0|req: 2/2] 192.168.15.1 () {42 vars in 821 bytes} [Fri Mar  1 09:19:00 2019] GET /updatedb => generated 68528 bytes in 576 msecs (HTTP/1.1 500) 4 headers in 129 bytes (1 switches on core 0)
+[pid: 25381|app: 0|req: 3/3] 192.168.15.1 () {42 vars in 815 bytes} [Fri Mar  1 09:19:12 2019] GET /admin => generated 0 bytes in 6 msecs (HTTP/1.1 301) 3 headers in 112 bytes (1 switches on core 0)
+urls
+[pid: 25378|app: 0|req: 1/4] 192.168.15.1 () {42 vars in 817 bytes} [Fri Mar  1 09:19:12 2019] GET /admin/ => generated 4728 bytes in 534 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+[pid: 25381|app: 0|req: 4/5] 192.168.15.1 () {44 vars in 848 bytes} [Fri Mar  1 09:19:25 2019] GET /admin/ => generated 4728 bytes in 303 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+[pid: 25381|app: 0|req: 5/6] 192.168.15.1 () {44 vars in 848 bytes} [Fri Mar  1 09:19:26 2019] GET /admin/ => generated 4728 bytes in 173 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+[pid: 25381|app: 0|req: 6/7] 192.168.15.1 () {44 vars in 920 bytes} [Fri Mar  1 09:19:32 2019] GET /admin/TestModel/contact/2/change/ => generated 9172 bytes in 631 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+[pid: 25378|app: 0|req: 2/8] 192.168.15.1 () {42 vars in 790 bytes} [Fri Mar  1 09:19:33 2019] GET /admin/jsi18n/ => generated 3217 bytes in 85 msecs (HTTP/1.1 200) 4 headers in 115 bytes (1 switches on core 0)
+[pid: 25381|app: 0|req: 7/9] 192.168.15.1 () {44 vars in 949 bytes} [Fri Mar  1 09:19:39 2019] GET /admin/TestModel/contact/2/history/ => generated 2064 bytes in 282 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+[pid: 25381|app: 0|req: 8/10] 192.168.15.1 () {44 vars in 894 bytes} [Fri Mar  1 09:19:41 2019] GET /admin/ => generated 4728 bytes in 201 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+[pid: 25381|app: 0|req: 9/11] 192.168.15.1 () {44 vars in 902 bytes} [Fri Mar  1 09:19:47 2019] GET /admin/TestModel/contact/ => generated 5191 bytes in 389 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+[pid: 25378|app: 0|req: 3/12] 192.168.15.1 () {42 vars in 781 bytes} [Fri Mar  1 09:19:47 2019] GET /admin/jsi18n/ => generated 3217 bytes in 95 msecs (HTTP/1.1 200) 4 headers in 115 bytes (1 switches on core 0)
+testdb
+[pid: 25381|app: 0|req: 10/13] 192.168.15.1 () {42 vars in 817 bytes} [Fri Mar  1 09:19:58 2019] GET /testdb => generated 25 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 108 bytes (1 switches on core 0)
+selectdb
+Internal Server Error: /selectdb
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/Django-1.11.20-py2.7.egg/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/Django-1.11.20-py2.7.egg/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/Django-1.11.20-py2.7.egg/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./newsite/testdb.py", line 21, in selectdb
+    response3 = eaxm_db.objects.get(id = 1)
+  File "/usr/lib/python2.7/site-packages/Django-1.11.20-py2.7.egg/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/Django-1.11.20-py2.7.egg/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+DoesNotExist: eaxm_db matching query does not exist.
+[pid: 25381|app: 0|req: 11/14] 192.168.15.1 () {42 vars in 821 bytes} [Fri Mar  1 09:20:11 2019] GET /selectdb => generated 69419 bytes in 622 msecs (HTTP/1.1 500) 4 headers in 129 bytes (1 switches on core 0)
+testdb
+[pid: 25381|app: 0|req: 12/15] 192.168.15.1 () {42 vars in 817 bytes} [Fri Mar  1 09:24:31 2019] GET /testdb => generated 25 bytes in 69 msecs (HTTP/1.1 200) 3 headers in 108 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Mar  4 11:25:18 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-36) on 01 March 2019 05:47:54
+os: Linux-3.10.0-957.5.1.el7.x86_64 #1 SMP Fri Feb 1 14:54:57 UTC 2019
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/lyf/test/Django/Django-1.11.20/django/bin/newsite/newsite
+writing pidfile to uwsgi.pid
+detected binary path: /usr/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/lyf/test/Django/Django-1.11.20/django/bin/newsite
+your processes number limit is 3796
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :9000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.5 (default, Oct 30 2018, 23:45:53)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-36)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x78b2e0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 364600 bytes (356 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 4 seconds on interpreter 0x78b2e0 pid: 24180 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 24180)
+spawned uWSGI worker 1 (pid: 24193, cores: 1)
+spawned uWSGI worker 2 (pid: 24194, cores: 1)
+spawned uWSGI worker 3 (pid: 24195, cores: 1)
+spawned uWSGI worker 4 (pid: 24196, cores: 1)
+urls
+selectdb
+[pid: 24196|app: 0|req: 1/1] 192.168.15.1 () {44 vars in 852 bytes} [Mon Mar  4 03:25:23 2019] GET /selectdb => generated 70 bytes in 464 msecs (HTTP/1.1 200) 3 headers in 108 bytes (1 switches on core 0)
